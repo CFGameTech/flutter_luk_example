@@ -1,0 +1,11 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.luk.flutter.sdk.luk" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="21"
+6-->/Users/yq_mac/.pub-cache/git/flutter_luk-b2946533af21114f1f68477cbf57046de9fcb113/android/src/main/AndroidManifest.xml
+7        android:targetSdkVersion="21" />
+7-->/Users/yq_mac/.pub-cache/git/flutter_luk-b2946533af21114f1f68477cbf57046de9fcb113/android/src/main/AndroidManifest.xml
+8
+9</manifest>

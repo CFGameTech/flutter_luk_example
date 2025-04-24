@@ -1,0 +1,25 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/yq_mac/.pub-cache/git/flutter_luk-b2946533af21114f1f68477cbf57046de9fcb113/android/src/main/AndroidManifest.xml:1:1-3:12
+INJECTED from /Users/yq_mac/.pub-cache/git/flutter_luk-b2946533af21114f1f68477cbf57046de9fcb113/android/src/main/AndroidManifest.xml:1:1-3:12
+INJECTED from /Users/yq_mac/.pub-cache/git/flutter_luk-b2946533af21114f1f68477cbf57046de9fcb113/android/src/main/AndroidManifest.xml:1:1-3:12
+	package
+		ADDED from /Users/yq_mac/.pub-cache/git/flutter_luk-b2946533af21114f1f68477cbf57046de9fcb113/android/src/main/AndroidManifest.xml:2:3-36
+		INJECTED from /Users/yq_mac/.pub-cache/git/flutter_luk-b2946533af21114f1f68477cbf57046de9fcb113/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/yq_mac/.pub-cache/git/flutter_luk-b2946533af21114f1f68477cbf57046de9fcb113/android/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/yq_mac/.pub-cache/git/flutter_luk-b2946533af21114f1f68477cbf57046de9fcb113/android/src/main/AndroidManifest.xml:1:11-69
+uses-sdk
+INJECTED from /Users/yq_mac/.pub-cache/git/flutter_luk-b2946533af21114f1f68477cbf57046de9fcb113/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/yq_mac/.pub-cache/git/flutter_luk-b2946533af21114f1f68477cbf57046de9fcb113/android/src/main/AndroidManifest.xml
+INJECTED from /Users/yq_mac/.pub-cache/git/flutter_luk-b2946533af21114f1f68477cbf57046de9fcb113/android/src/main/AndroidManifest.xml
+INJECTED from /Users/yq_mac/.pub-cache/git/flutter_luk-b2946533af21114f1f68477cbf57046de9fcb113/android/src/main/AndroidManifest.xml
+INJECTED from /Users/yq_mac/.pub-cache/git/flutter_luk-b2946533af21114f1f68477cbf57046de9fcb113/android/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/yq_mac/.pub-cache/git/flutter_luk-b2946533af21114f1f68477cbf57046de9fcb113/android/src/main/AndroidManifest.xml
+		ADDED from /Users/yq_mac/.pub-cache/git/flutter_luk-b2946533af21114f1f68477cbf57046de9fcb113/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/yq_mac/.pub-cache/git/flutter_luk-b2946533af21114f1f68477cbf57046de9fcb113/android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/yq_mac/.pub-cache/git/flutter_luk-b2946533af21114f1f68477cbf57046de9fcb113/android/src/main/AndroidManifest.xml
+		ADDED from /Users/yq_mac/.pub-cache/git/flutter_luk-b2946533af21114f1f68477cbf57046de9fcb113/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/yq_mac/.pub-cache/git/flutter_luk-b2946533af21114f1f68477cbf57046de9fcb113/android/src/main/AndroidManifest.xml

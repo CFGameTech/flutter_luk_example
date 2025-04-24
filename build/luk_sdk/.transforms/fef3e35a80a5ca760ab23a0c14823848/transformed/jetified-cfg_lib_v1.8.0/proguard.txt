@@ -1,0 +1,86 @@
+-keepattributes *Annotation*
+-keepclassmembers class * {
+    @com.cftech.eventbus.Subscribe <methods>;
+}
+-keep enum com.cftech.eventbus.ThreadMode { *; }
+
+# If using AsyncExecutord, keep required constructor of default event used.
+# Adjust the class name if a custom failure event type is used.
+-keepclassmembers class com.cftech.eventbus.util.ThrowableFailureEvent {
+    <init>(java.lang.Throwable);
+}
+
+# Accessed via reflection, avoid renaming or removal
+-keep class com.cftech.eventbus.android.AndroidComponentsImpl
+
+-keep class com.cftech.gamelibrary.module.** { *; }
+
+-keep class com.cftech.gamelibrary.jsinterface.** { *; }
+
+-keep class com.cftech.gamelibrary.CFGameSDK { *; }
+
+-keep class com.cftech.gamelibrary.CFGameSDK$ICFLogger { *; }
+
+-keep class com.cftech.gamelibrary.CFGameSDK$ICFBizCallback { *; }
+
+-keep class com.cftech.gamelibrary.CFGameSDK$ICFGameLifecycle { *; }
+
+-keep class com.cftech.gamelibrary.CFGameSDK$ICFLoginCallback { *; }
+
+-keep class com.cftech.gamelibrary.CFGameSDK$ICFRTCCallback { *; }
+
+-keep class com.cftech.gamelibrary.CFGameSDK$GameLifecycleApi { *; }
+
+-keep class com.cftech.gamelibrary.CFGameSDK$CFRect { *; }
+
+-keep class com.cftech.gamelibrary.interfaces.ICFGameListCallback { *; }
+
+-keep class com.cftech.gamelibrary.utils.** { *; }
+
+-keep class com.cftech.gamelibrary.event.GameLifecycleEvent$StartGame { *; }
+-keep class com.cftech.gamelibrary.event.GameLifecycleEvent$KickOutPlayer { *; }
+-keep class com.cftech.gamelibrary.event.GameLifecycleEvent$GameBackgroundMusicSet { *; }
+-keep class com.cftech.gamelibrary.event.GameLifecycleEvent$GameSoundSet { *; }
+
+-keep class com.cftech.eventbus.** { *; }
+
+-keep class com.cftech.glide.** { *; }
+
+-keep class com.cftech.gson.** { *; }
+
+-keep class com.cftech.okhttp3.** { *; }
+
+-keep class com.cftech.okio.** { *; }
+
+-keep class com.cftech.nanohttpd.** { *; }
+
+-keep class com.cftech.gamelibrary.view.webview.CFGWebView {
+   public void loadGame(int, java.lang.String);
+}
+
+###############okhttp start####################
+# JSR 305 annotations are for embedding nullability information.
+-dontwarn javax.annotation.**
+# A resource is loaded with a relative path so the package of this class must be preserved.
+-keepnames class com.cftech.okhttp3.internal.publicsuffix.PublicSuffixDatabase
+# Animal Sniffer compileOnly dependency to ensure APIs are compatible with older versions of Java.
+-dontwarn org.codehaus.mojo.animal_sniffer.*
+# OkHttp platform used only on JVM and when Conscrypt dependency is available.
+-dontwarn com.cftech.okhttp3.internal.platform.ConscryptPlatform
+###############okhttp start####################
+
+
+
+###############glide start####################
+-keep public class * implements com.cftech.glide.module.GlideModule
+-keep class * extends com.cftech.glide.module.AppGlideModule {
+ <init>(...);
+}
+-keep public enum com.cftech.glide.load.ImageHeaderParser$** {
+  **[] $VALUES;
+  public *;
+}
+-keep class com.cftech.glide.load.data.ParcelFileDescriptorRewinder$InternalRewinder {
+  *** rewind();
+}
+###############glide start####################

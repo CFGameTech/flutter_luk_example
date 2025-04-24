@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/cf_loading_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:includeFontPadding="false"
+        android:text="0%"
+        android:textColor="#8f8f8f"
+        android:textSize="20sp"
+        android:translationY="40dp" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cf_loading_progress"
+        android:layout_centerHorizontal="true"
+        android:translationY="30dp">
+
+        <com.cftech.gamelibrary.view.webview.CircleProgressBar
+            android:id="@+id/cf_loading_progress_bar"
+            android:layout_width="102dp"
+            android:layout_height="102dp"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/cf_loading_game_icon"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+</merge>
