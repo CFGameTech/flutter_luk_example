@@ -100,10 +100,10 @@ bool _loginSuccess = await Luk.instance.setUserInfo(uid: "123456", verifyCode: "
 ### 2.6、调起小游戏界面：
 
 * 参考[GamePage](lib/page/game_page.dart)
-* [LukGameView]()的用法参考[这里](lib/page/game_page.dart#44L),他需要一个[LukGameController](https://gitee.com/wys2018/luk_sdk/blob/master/lib/view/luk_game_controller.dart)
+* [LukGameView]()的用法参考[这里](lib/page/game_page.dart#44L),他需要一个[LukGameController](https://github.com/CFGameTech/flutter_luk/blob/main/lib/view/luk_game_controller.dart)
   ，用于控制游戏界面的生命周期流程；
 
-### 2.7、关于[LukGameController](https://gitee.com/wys2018/luk_sdk/blob/master/lib/view/luk_game_controller.dart)
+### 2.7、关于[LukGameController](https://github.com/CFGameTech/flutter_luk/blob/main/lib/view/luk_game_controller.dart)
 
 有以下几个关键方法：
 
